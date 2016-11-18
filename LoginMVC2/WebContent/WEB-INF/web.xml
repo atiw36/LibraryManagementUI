@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.controllers.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet1</servlet-name>
+		<servlet-class>com.controllers.LoginServlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SignUpSer</display-name>
+		<servlet-name>SignUpSer</servlet-name>
+		<servlet-class>com.controllers.SignUpSer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet1</servlet-name>
+		<url-pattern>/LoginServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SignUpSer</servlet-name>
+		<url-pattern>/SignUpSer</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>LoginPage.jsp</welcome-file>
+
+	</welcome-file-list>
+</web-app>
